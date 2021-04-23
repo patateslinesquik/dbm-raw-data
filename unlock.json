@@ -1,0 +1,253 @@
+{
+  "name": "unlock",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "DVWlU",
+  "actions": [
+    {
+      "measurement": "1",
+      "value": "4",
+      "save": "1",
+      "restrict": "1",
+      "iftrue": "0",
+      "iftrueVal": "",
+      "iffalse": "3",
+      "iffalseVal": "4",
+      "storage": "0",
+      "varName": "",
+      "name": "Set Time Restriction"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed1",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "message": "${member} bu komutu tekrar kullanabilmek için 4 saniye beklemelisin.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed1",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "permission": "MANAGE_CHANNELS",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "2",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed2",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "message": "${member} bu komutu kullanabilmek için yeterli izine sahip değilsin.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed2",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "info": "20",
+      "storage": "1",
+      "varName2": "botid",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "info": "0",
+      "find": "${tempVars(\"botid\")}",
+      "storage": "1",
+      "varName": "bot",
+      "find2": "0",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Find Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "permission": "MANAGE_CHANNELS",
+      "iftrue": "3",
+      "iftrueVal": "4",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "name": "Check Member Permissions"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#ff0000",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed3",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "message": "${member} bu komutu kullanabilmek için yeterli izine sahip değilim.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed3",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "10",
+      "storage": "1",
+      "varName2": "role",
+      "name": "Store Server Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "role": "3",
+      "varName2": "role",
+      "permission": "SEND_MESSAGES",
+      "state": "0",
+      "reason": "",
+      "name": "Set Role Channel Perms"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "info": "0",
+      "storage": "1",
+      "varName2": "chat",
+      "name": "Store Channel Info"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#00ff00",
+      "url": "",
+      "authorIcon": "",
+      "authorUrl": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "timestamp": "false",
+      "debug": "false",
+      "text": "",
+      "year": "",
+      "month": "",
+      "day": "",
+      "hour": "",
+      "minute": "",
+      "second": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "${member}, ${tempVars(\"chat\")} kanalının kilidini açtı.",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "storage3": "0",
+      "varName3": "",
+      "iffalse": "0",
+      "iffalseVal": "",
+      "messageContent": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "comType": "0"
+}
